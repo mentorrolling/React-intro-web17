@@ -1,4 +1,23 @@
-.fotito {
-  width: 200px;
-  filter: opacity(0.2);
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  max-width: 300px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  margin: 16px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ccc;
+  color: black;
+  & img {
+    width: 80px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &:hover {
+    box-shadow: 2px 2px 12px rgba(186, 240, 245, 0.443);
+  }
 }

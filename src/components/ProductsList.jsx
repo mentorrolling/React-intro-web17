@@ -9,7 +9,14 @@ const ProductsList = () => {
     <div>
       <ul>
         {products.map((product) => (
-          <li key={product.id}>
+          <li
+            key={product.id}
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              color: product.price > 1000 ? "red" : "white",
+            }}
+          >
             <span>Nombre: {product.name}</span>
             <span>Precio: {product.price}</span>
           </li>

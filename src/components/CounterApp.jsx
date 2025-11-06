@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import ButtonPropsApp from "./ButtonPropsApp";
 
@@ -7,6 +7,15 @@ const CounterApp = ({ initialState }) => {
   //useState: variable de estado, función para cambiar el valor de la variable, entre paréntesis va el valor inicial que tendrá la variable.
 
   //   let counter = 0;
+
+  // useEffect(() => {
+  //   const timer = setInterval(() => console.log("tick"), 1000);
+
+  //   return () => {
+  //     clearInterval(timer); // limpieza
+  //     console.log("Componente desmontado");
+  //   };
+  // }, []);
 
   const increment = () => {
     setCounter(counter + 1);

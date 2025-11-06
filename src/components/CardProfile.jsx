@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "../css/card.css";
 
-const CardProfile = ({ user }) => {
-  const [like, setLike] = useState(false);
+const CardProfile = ({ user, updateLike }) => {
+  // const [like, setLike] = useState(false);
 
-  const { firstName, lastName, avatar, email } = user;
+  const { firstName, lastName, avatar, email, like, id } = user;
   // const usuario = {
   //   name: "Hedy Lamarr",
   //   imageUrl: "https://i.imgur.com/yXOvdOSs.jpg",
@@ -25,13 +25,13 @@ const CardProfile = ({ user }) => {
           <i
             className="fa fa-heart like"
             aria-hidden="true"
-            onClick={() => setLike(!like)}
+            onClick={() => updateLike(id)}
           ></i>
         ) : (
           <i
             className="fa fa-heart-o like"
             aria-hidden="true"
-            onClick={() => setLike(!like)}
+            onClick={() => updateLike(id)}
           ></i>
         )}
       </div>

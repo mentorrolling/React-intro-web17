@@ -7,12 +7,16 @@
 .title-news {
   text-align: center;
 }
+
+.card-link {
+  min-height: 400px;
+}
 .card-noticias {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 300px;
-  min-height: 400px;
+  height: 100%;
   border-radius: 10px;
   /* box-shadow: 8px 2px 18px -6px rgba(245, 243, 243, 0.75); */
   background-color: aliceblue;

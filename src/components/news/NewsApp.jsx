@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "../../css/noticias.css";
 import CardNewApp from "./CardNewApp";
+import ClimaApp from "../ClimaApp";
 
 const NewsApp = () => {
   const [news, setNews] = useState([]);
@@ -29,6 +30,9 @@ const NewsApp = () => {
   return (
     <div>
       <h1>Portal de noticias</h1>
+      <div className="container-wheater">
+        <ClimaApp />
+      </div>
       {loading ? (
         <h3>Cargando...</h3>
       ) : (

@@ -6,6 +6,7 @@ import CounterApp from "./components/CounterApp";
 // import CardProfile from "./components/CardProfile";
 import ListCardsProfile from "./components/ListCardsProfile";
 import ProductsList from "./components/ProductsList";
+import ClimaApp from "./components/ClimaApp";
 
 function App() {
   //Javascript
@@ -27,6 +28,9 @@ function App() {
   return (
     <div>
       <h1>Hola {user}😎</h1>
+      <div className="container-wheater">
+        <ClimaApp />
+      </div>
       <div style={{ display: "flex" }}>
         {/* <ButtonApp dato={user} animales={mascotas} /> */}
         {/* <ButtonPropsApp title="Mostrar/ocultar" action={showProfiles} />

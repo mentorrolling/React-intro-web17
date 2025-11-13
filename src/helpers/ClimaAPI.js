@@ -1,0 +1,12 @@
+const apiKey = "e3e500cbb8977b4c121b9a50e5f059a1";
+
+const infoClima = async (lat, long) => {
+  const resp = await fetch(
+    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&lang=es&appid=${apiKey}`
+  );
+  const data = await resp.json();
+
+  return data;
+};
+
+export { infoClima };

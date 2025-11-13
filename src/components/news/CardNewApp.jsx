@@ -4,7 +4,7 @@ const CardNewApp = ({ noticia }) => {
   const { author, title, description, urlToImage, url } = noticia;
 
   return (
-    <a href={url} target="_blank">
+    <a href={url} target="_blank" className="card-link">
       <article className="card-noticias">
         <header>
           <img src={urlToImage} alt={title} />
